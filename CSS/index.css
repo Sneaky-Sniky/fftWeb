@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins";
+    font-size:16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0%;
+    margin: 0;
+}
+
+#search-full-div{
+    padding: 30px 24px 10em 24px;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url(../PICTURES/bg10.png);
+    background-size: cover;
+}
+
+#nav-bar-right-side{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+#img-logo{
+    height: 100px;
+    width: 100px;
+}
+.menu-buttons{
+    background-color: transparent;
+    color: #e7e7e7;
+    border: none;
+    margin: 0.5em;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.menu-buttons:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#search-bar,#search-bar-location{
+    background-color: #e7e7e7;
+    border-radius: 0;
+    padding: 2em;
+    border: 0;
+    width: 500px;
+    margin: 1em 1em 1em 1em;
+    
+}
+
+#search-bar-holder input{
+    height: 50px;
+}
+
+#search-bar-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 10;
+    width: fit-content;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#search-div{
+    color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
+}
+#search-button{
+    background-color: #3498db;
+    color: white;
+    border-radius: 0;
+    padding: 2em;
+    border: 0;
+    margin: 1em 1em 1em 1em;
+    font-weight: 600;
+    text-align: center;
+    background-image: url(../PICTURES/search-logo.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#search-button:hover{
+    background-color: #2980b9;
+    cursor: pointer; 
+}
+
+.filter-button{
+    background-color: rgba(255, 255, 255, 0.192);
+    border: none;
+    color: #fcfafa;
+    margin: 0.05em;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-top: 2em;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+
+}
+
+.filter-button:hover{
+    cursor: pointer;
+    background-color: #2980b9;
+}
+
+#filter-button-left{
+    border-radius: 50px 0 0 50px;
+}
+#filter-button-right{
+    border-radius: 0 50px 50px 0;
+}
+
+#footer{
+    background-image: url(../PICTURES/footer.png);
+    background-size: cover;
+    width: auto;
+    height: 600px;
+    background-position: center top;
+
+}
+
+#popular-doctors, #popular-clinics, #volunteer-div{
+    height: 700px;
+    background-color: #fff;
+    width: auto;
+    padding: 0.5em;
+}
+
+#volunteer-div{
+
+    background-color: #efefef;
+}
+
+#volunteer-links{
+    margin: 2em;
+    display: flex;
+    align-items: center;
+}
+
+#popular-doctors-header, #popular-clinics-header, #volunteer-div-header{
+    text-align: center;
+    margin-top: 7em;
+    font-size: 1.5em;
+}
+#popular-doctors-p, #popular-clinics-p, #volunteer-p{
+    color: #8b8b8b;
+}
+
+.search-header{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#vol-pic-one{
+    width: 300px;
+    height: 300px;
+    
+}
+
+#banner{
+    background-image: url(../PICTURES/banner3.png);
+    width: auto;
+    height: 900px; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
