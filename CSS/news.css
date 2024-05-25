@@ -1,0 +1,27 @@
+.news-feed {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.news-items {
+    margin-top: 20px;
+}
+
+.news-item {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    margin: 0;
+    color: #555;
+}

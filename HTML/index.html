@@ -9,7 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Med</title>
     <link rel="stylesheet" href="../CSS/index.css">
-</head>
+    <script src="/JAVASCRIPT/index.js"></script>
+</head> 
 <body>
     <div id="search-full-div">
         <div id="nav-bar">
@@ -35,19 +36,94 @@
             </div>
             
             <div>
-                <button class="filter-button" id="filter-button-left"> Lorem, ipsum</button>
-                <button class="filter-button"> Lorem, ipsum</button>
-                <button class="filter-button"> Lorem, ipsum.</button>
-                <button class="filter-button"> Lorem, ipsum.</button>
-                <button class="filter-button" id="filter-button-right"> Lorem, ipsum.</button>
-
+                <button class="filter-button" id="filter-button-left">Cardiology</button>
+                <button class="filter-button">Dermatology</button>
+                <button class="filter-button">Endocrinology</button>
+                <button class="filter-button">Gastro</button>
+                <button class="filter-button" id="filter-button-right">Neurology</button>
             </div>
+            
         </div>
     </div>
     <div id="popular-doctors">
         <div id="popular-doctors-header">
             <h1>Most Popular Nearby Doctors</h1>
-            <p id="popular-doctors-p">Find Your Cities' Best Doctors</p>
+            <p id="popular-doctors-p">Find Your City's Best Doctors</p>
+        </div>
+    
+        <div id="carousel-container">
+            <button id="prev-btn" class="carousel-btn">&lt;</button>
+            <div id="doctors-list-wrapper">
+                <div id="doctors-list">
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://via.placeholder.com/350x250" alt="Doctor 1">
+                        </div>
+                        <div class="doctor-info">
+                            <h2>Dr. John Doe</h2>
+                            <p>Cardiologist</p>
+                            <p>Rating: ★★★★☆</p>
+                            <p>Location: Downtown Clinic</p>
+                        </div>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://via.placeholder.com/350x250" alt="Doctor 2">
+                        </div>
+                        <div class="doctor-info">
+                            <h2>Dr. Jane Smith</h2>
+                            <p>Pediatrician</p>
+                            <p>Rating: ★★★★★</p>
+                            <p>Location: Uptown Medical Center</p>
+                        </div>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://via.placeholder.com/350x250" alt="Doctor 3">
+                        </div>
+                        <div class="doctor-info">
+                            <h2>Dr. Emily Johnson</h2>
+                            <p>Dermatologist</p>
+                            <p>Rating: ★★★★☆</p>
+                            <p>Location: Westside Hospital</p>
+                        </div>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://via.placeholder.com/350x250" alt="Doctor 4">
+                        </div>
+                        <div class="doctor-info">
+                            <h2>Dr. Michael Brown</h2>
+                            <p>Orthopedic Surgeon</p>
+                            <p>Rating: ★★★★★</p>
+                            <p>Location: Eastside Clinic</p>
+                        </div>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://via.placeholder.com/350x250" alt="Doctor 5">
+                        </div>
+                        <div class="doctor-info">
+                            <h2>Dr. Sarah Davis</h2>
+                            <p>Neurologist</p>
+                            <p>Rating: ★★★★☆</p>
+                            <p>Location: Midtown Medical</p>
+                        </div>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://via.placeholder.com/350x250" alt="Doctor 6">
+                        </div>
+                        <div class="doctor-info">
+                            <h2>Dr. David Wilson</h2>
+                            <p>General Practitioner</p>
+                            <p>Rating: ★★★★☆</p>
+                            <p>Location: Southside Clinic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="next-btn" class="carousel-btn">&gt;</button>
         </div>
     </div>
 
@@ -55,49 +131,117 @@
         <div id="volunteer-div">
             <div id="volunteer-div-header">
                 <h1>Volunteer</h1>
-                <p id="volunteer-p">Join Our Mission to Make a Difference</p>
+                <p id="volunteer-p">Join Our Mission to Make a Difference in Health</p>
             </div>
-
+        
             <div id="volunteer-links">
-                <div>
-                    <img src="../PICTURES/volunteer/donating_blood.jpg" alt="volunteer" id=vol-pic-one>
+                <div class="volunteer-section">
+                    <div class="volunteer-image">
+                        <img src="https://via.placeholder.com/300" alt="Community health screening">
+                    </div>
+                    <div class="volunteer-text">
+                        <h2>Community Health Screenings</h2>
+                        <p>Participate in health screening events to help detect and prevent health issues in the community. Your assistance can lead to early interventions and better health outcomes.</p>
+                    </div>
                 </div>
-
-                <div>
-                    <img src="../PICTURES/blood-donation.png" alt="volunteer">
-                    <img src="../PICTURES/blood-donation.png" alt="volunteer">
+                <div class="volunteer-section">
+                    <div class="volunteer-image">
+                        <img src="https://via.placeholder.com/300" alt="Hospital volunteering">
+                    </div>
+                    <div class="volunteer-text">
+                        <h2>Hospital Volunteering</h2>
+                        <p>Support hospital staff by assisting with non-medical tasks. Your efforts can provide comfort to patients and their families, making their hospital stay more pleasant.</p>
+                    </div>
                 </div>
-
-                <div>
-                    <img src="../PICTURES/blood-donation.png" alt="volunteer">
-
-                    <div>
-                    <img src="../PICTURES/blood-donation.png" alt="volunteer">
-                    <img src="../PICTURES/blood-donation.png" alt="volunteer">
+                <div class="volunteer-section">
+                    <div class="volunteer-image">
+                        <img src="https://via.placeholder.com/300" alt="Health education">
+                    </div>
+                    <div class="volunteer-text">
+                        <h2>Health Education</h2>
+                        <p>Help educate the community about healthy lifestyle choices. Conduct workshops, distribute educational materials, and promote awareness on various health topics.</p>
+                    </div>
+                </div>
+                <div class="volunteer-section">
+                    <div class="volunteer-image">
+                        <img src="https://via.placeholder.com/300" alt="Mental health support">
+                    </div>
+                    <div class="volunteer-text">
+                        <h2>Mental Health Support</h2>
+                        <p>Provide support for mental health initiatives. Whether it's leading support groups or assisting in mental health campaigns, your involvement can make a significant impact.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
     <div id="banner">
 
     </div>
 
-
     <div id="popular-clinics">
-        <div id="popular-clinics-header">
-            <h1>Most Popular Nearby Clinics</h1>
-            <p id="popular-clinics-p">Find Your Cities Best Clinics</p>
+        <h1>Most Popular Nearby Clinics</h1>
+        <p id="popular-clinics-p">Find Your Cities Best Clinics</p>
+
+        <div id="clinics-holder">
+            <div class="left-side">
+                <div class="clinic-item clinic2">
+                    <p class="clinic-name">Clinic 2</p>
+                </div>
+                <div class="bottom-clinics">
+                    <div class="clinic-item clinic3">
+                        <p class="clinic-name">Clinic 3</p>
+                    </div>
+                    <div class="clinic-item clinic4">
+                        <p class="clinic-name">Clinic 4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clinic-item clinic1">
+                <p class="clinic-name">Clinic 1</p>
+            </div>
         </div>
     </div>
 
-    <div id="footer">
-        //credits
-        //privacy policy
-        //about us
-    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../PICTURES/icon.png" alt="Medical Logo">
+                <h1>Medical Clinic</h1>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Doctors</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>123 Medical Street,</p>
+                <p>City, State, ZIP</p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: info@medicalclinic.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="www.linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Medical Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+
     
 </body>
 </html>

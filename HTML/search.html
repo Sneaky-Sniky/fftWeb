@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map and Listings</title>
+    <link rel="stylesheet" href="../CSS/search.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>My Website</h1>
+        <div class="search-bars">
+            <input type="text" id="what-search" placeholder="What are you looking for?">
+            <input type="text" id="where-search" placeholder="Where?">
+            <button type="button" onclick="search()">Search</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="listing">
+            <div class="sort-options">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                </select>
+            </div>
+            <div class="listing-items">
+                <div class="listing-item">
+                    <img src="listing1.jpg" alt="Listing 1">
+                    <p>Listing 1</p>
+                    <p class="price">$100</p>
+                </div>
+                <div class="listing-item">
+                    <img src="listing2.jpg" alt="Listing 2">
+                    <p>Listing 2</p>
+                    <p class="price">$200</p>
+                </div>
+                <div class="listing-item">
+                    <img src="listing3.jpg" alt="Listing 3">
+                    <p>Listing 3</p>
+                    <p class="price">$150</p>
+                </div>
+            </div>
+        </div>
+        <div class="map" id="map"></div>
+    </div>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            const location = { lat: -25.344, lng: 131.036 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: location,
+            });
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+
+        function search() {
+            const what = document.getElementById('what-search').value;
+            const where = document.getElementById('where-search').value;
+            alert(`Searching for ${what} in ${where}`);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
