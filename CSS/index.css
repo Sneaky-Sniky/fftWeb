@@ -170,15 +170,68 @@ body{
 }
 
 
-
 #banner {
-    background-image: url(../PICTURES/banner3.png);
-    width: auto;
-    height: 900px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
+
+.side-by-side {
+    display: flex;
+    width: 100%;
+}
+
+.left-div {
+    background-color: #ffffff;
+    width: 40%; 
+    height: 800px; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-div {
+    background-color: #F7F6FB;
+    width: 60%; 
+    height: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#transition-svg{
+    width: 60%;
+    display: flex;
+    margin-left: 40%;
+    
+
+}
+#header-banner {
+    font-size: 1.8em;
+    margin-left: 14em;
+    margin-top: 6em;
+    position: relative;
+    
+}
+
+#quote {
+    font-size: 2em;
+    margin-left: 20em;
+    margin-top: 10em;
+}
+.connecting-image {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 700px; 
+    height: auto;
+    transform: scaleX(-1);
+    z-index: 1;
+    box-shadow: 10px 10px 20px rgba(50, 50, 51, 0.3);
+}
+
+
+
 
 #popular-clinics {
     text-align: center;
@@ -289,6 +342,7 @@ body{
 #volunteer-div {
     text-align: center;
     margin-top: 50px;
+    
 }
 
 #volunteer-div-header h1 {
@@ -304,7 +358,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px;
+    
 }
 
 #volunteer-links > div {
@@ -314,13 +369,13 @@ body{
 #vol-pic-one {
     width: 300px;
     height: 300px;
-    margin-bottom: 10px; /* Adjust as needed */
+    margin-bottom: 10px; 
 }
 
 #volunteer-links img {
-    width: 170px; /* Adjust as needed */
-    height: 170px; /* Adjust as needed */
-    margin: 5px; /* Adjust as needed */
+    width: 170px; 
+    height: 170px; 
+    margin: 5px; 
 }
 
 
