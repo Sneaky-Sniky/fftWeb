@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.preview-pane {
+    width: 300px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.folder {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.folder:hover {
+    background-color: #ddd;
+}
+
+.files {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.file {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.file:hover {
+    background-color: #ddd;
+}
+
+.file-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.file-name {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.preview {
+    border: 1px solid #ccc;
+    padding: 20px;
+    min-height: 200px;
+}
+
+.preview p {
+    text-align: center;
+}

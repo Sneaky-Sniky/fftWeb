@@ -3,67 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Map and Listings</title>
     <link rel="stylesheet" href="../CSS/search.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="../JAVASCRIPT/search.js"></script>
 </head>
 <body>
     <nav class="navbar">
-        <h1>My Website</h1>
-        <div class="search-bars">
-            <input type="text" id="what-search" placeholder="What are you looking for?">
-            <input type="text" id="where-search" placeholder="Where?">
-            <button type="button" onclick="search()">Search</button>
-        </div>
+        <img id="logo" src="../PICTURES/Icon.png" alt="logo">
+        <h1>Medical Site</h1>
+        
     </nav>
-    <div class="container">
-        <div class="listing">
-            <div class="sort-options">
-                <label for="sort">Sort by:</label>
-                <select id="sort">
-                    <option value="price-low-high">Price: Low to High</option>
-                    <option value="price-high-low">Price: High to Low</option>
-                </select>
+    
+
+    <div id="map-listing">
+        <div id="sort-listing">
+            <div id="sort-options">
+                <div class="search-bars">
+                    <button id="open-now-btn" onclick="toggleButton('open-now-btn')">Open now</button>
+                    <button id="near-me-btn" onclick="toggleButton('near-me-btn')">Near me</button>
+                    <select id="price-select">
+                        <option value="">Price</option>
+                        <option value="low-high">Low to High</option>
+                        <option value="high-low">High to Low</option>
+                    </select>
+                    <input type="text" id="what-search" placeholder="What are you looking for?">
+                    <input type="text" id="where-search" placeholder="Where?">
+                    <button type="button" onclick="search()">Search</button>
+                </div>
             </div>
+            <div class="listing">
+                
             <div class="listing-items">
                 <div class="listing-item">
-                    <img src="listing1.jpg" alt="Listing 1">
-                    <p>Listing 1</p>
-                    <p class="price">$100</p>
+                    <div id="image1" class="listing-item-image"></div>
+                    <div class="listing-content">
+                        <p>Listing 1</p>
+                        <div class="price-status">
+                        <p class="price">$100</p>
+                        <div class="status"></div>
+                    </div>
+                    </div>
                 </div>
                 <div class="listing-item">
-                    <img src="listing2.jpg" alt="Listing 2">
-                    <p>Listing 2</p>
-                    <p class="price">$200</p>
+                    <div id="image2" class="listing-item-image"></div>
+                    <div class="listing-content">
+                        <p>Listing 2</p>
+                        <div class="price-status">
+                        <p class="price">$200</p>
+                        <div class="status"></div>
+                    </div>
+                    </div>
+                    
                 </div>
                 <div class="listing-item">
-                    <img src="listing3.jpg" alt="Listing 3">
-                    <p>Listing 3</p>
-                    <p class="price">$150</p>
+                    <div id="image3" class="listing-item-image"></div>
+                    <div class="listing-content" >
+                        <p>Listing 3</p>
+                        <div class="price-status">
+                            <p class="price">$150</p>
+                            <div class="status"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="listing-item">
+                    <div id="image4" class="listing-item-image"></div>
+                    <div class="listing-content"> 
+                        <p>Listing 4</p>
+                        <div class="price-status">
+                            <p class="price">$150</p>
+                            <div class="status"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="listing-item">
+                    <div id="image5" class="listing-item-image"></div>
+                    <div class="listing-content">
+                        <p>Listing 5</p>
+                        <div class="price-status">
+                            <p class="price">$150</p>
+                            <div class="status"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="listing-item">
+                    <div id="image6" class="listing-item-image"></div>
+                    <div class="listing-content">
+                        
+                    <p>Listing 6</p>
+                    <div class="price-status">
+                        <p class="price">$150</p>
+                        <div class="status"></div>
+                    </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
-        <div class="map" id="map"></div>
     </div>
-    <script>
-        // Initialize and add the map
-        function initMap() {
-            const location = { lat: -25.344, lng: 131.036 };
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 4,
-                center: location,
-            });
-            const marker = new google.maps.Marker({
-                position: location,
-                map: map,
-            });
-        }
-
-        function search() {
-            const what = document.getElementById('what-search').value;
-            const where = document.getElementById('where-search').value;
-            alert(`Searching for ${what} in ${where}`);
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+        <div id="map">
+            <iframe width="811" height="1080" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=811&amp;height=1080&amp;hl=en&amp;q=%20+()&amp;t=p&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='http://mapseinbinden.de'>auf www.Mapseinbinden.de</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=885dddc2a59d40518d84c5cfbcdd73b6d2d9d656'></script>
+        </div>
+            
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    </div>
+    
 </body>
 </html>

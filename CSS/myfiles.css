@@ -1,112 +1,144 @@
-body {
-    font-family: Arial, sans-serif;
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #ECF5F9;
+    font-family: "Poppins";
+    font-size:16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0%;
     margin: 0;
-    padding: 0;
+}
+
+#second-nav {
+    height: 100px;
+    background-color: #ffffff;
+    margin-bottom: 2em;
+}
+#nav-toppest {
+    height: 3em;
+    background-color: #ffffff;
+}
+
+/* Style for the second navigation bar container */
+#second-nav {
+    background-color: #ffffff; /* Blue background color */
+    padding: 10px 20px;
+}
+
+/* Style for the unordered list */
+#second-nav ul {
+    list-style-type: none; /* Remove default list bullets */
+    display: flex; /* Display list items horizontally */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    color: black;
+
+}
+
+/* Style for each list item */
+#second-nav ul li {
+    margin: 0 15px; /* Horizontal space between items */
+    color: black;
+    margin-top: 1.5em;
+    width: 200px;
+    
+}
+
+/* Style for the links */
+#second-nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 25px;
+    transition: color 0.3s; /* Smooth color transition */
+    color: black;
+    
+}
+
+/* Hover effect for the links */
+#second-nav ul li a:hover {
+    color: #ffdd57; /* Yellow color on hover */
 }
 
 .navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+    background-color: #3498db; /* Blue color */
+    padding: 10px 20px; /* Adjust padding as needed */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 70px;
+    
 }
 
-.logo {
+/* Logo styling */
+.navbar .logo {
+    color: #fff; /* White color */
     font-size: 24px;
-    text-decoration: none;
-    color: #fff;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
 }
 
-.nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    display: inline;
-    margin-left: 20px;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.file-section {
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-.file-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.file-header h1 {
-    font-size: 24px;
-    margin: 0;
-}
-
-.btn-upload {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-upload:hover {
-    background-color: #45a049;
-}
-
-.file-filters {
-    margin-bottom: 20px;
-}
-
-.file-filters select,
-.file-filters input {
+/* Notification styling */
+.navbar .notification {
+    color: #fff; /* White color */
+    font-size: 20px;
     margin-right: 10px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-.file-list {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
+/* Account styling */
+.navbar .account {
+    color: #fff; /* White color */
+    font-size: 20px;
+    text-decoration: none; /* Remove underline */
 }
 
+/* Style for file item container */
+/* Style for file item container */
 .file-item {
     display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ccc;
+    background-color: #ffffff;
+    width: 250px;
+    height: 300px;
+    margin: 1em;
 }
 
+/* Style for document icon */
 .file-item img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px; /* Move image away from text */
 }
 
+/* Style for file info container */
 .file-info {
-    flex-grow: 1;
+    text-align: center;
 }
 
+
+
+/* Style for file name */
+.file-name {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Style for file details */
 .file-details {
-    color: #555;
     font-size: 14px;
-    margin-top: 5px;
+    color: #666;
+}
+
+.file-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
