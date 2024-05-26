@@ -52,51 +52,12 @@ HTML{
     transition: color 0.3s;
     font-size: large;
 }
-.file-list{
-    background-color: rgb(245, 238, 238);
-    padding-top: 15px;
-    gap: 50px;
-}
+
 .nav-button:hover {
     color: #3498db;
 }
 
 
-/* Style for each list item */
-#second-nav ul li {
-    margin: 0 15px; /* Horizontal space between items */
-    color: black;
-    margin-top: 1.5em;
-    width: 200px;
-    
-}
-
-/* Style for the links */
-#second-nav ul li a {
-    color: #fff; /* White text color */
-    text-decoration: none; /* Remove underline from links */
-    font-size: 25px;
-    transition: color 0.3s; /* Smooth color transition */
-    color: black;
-    
-}
-
-
-
-/* Logo styling */
-.logo {
-    color: #fff; /* White color */
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none; /* Remove underline */
-}
-
-/* Notification styling */
-.notification {
-    color: #fff; /* White color */
-    font-size: 20px;
-    margin-right: 10px;
-}
 
 /* Account styling */
  .account {
