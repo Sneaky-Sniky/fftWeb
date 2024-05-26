@@ -186,11 +186,23 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    height: 600px;
 }
 
 .side-by-side {
     display: flex;
     width: 100%;
+}
+
+.side-by-side {
+    display: flex;
+    width: 100%;
+}
+
+.side-by-side {
+    display: flex;
+    width: 100%;
+    position: relative; /* Ensure the parent container is positioned */
 }
 
 .left-div {
@@ -207,16 +219,19 @@ body {
     height: 450px;
     padding: 12px;
     box-sizing: border-box;
+    position: relative; /* Ensure it's a positioned parent */
 }
 
 #transition-svg {
-    width: 30%;
-    display: flex;
-    margin-left: 40%;
-    width: 100%;
+    width: 60%; /* 60% width relative to the right-div */
     height: 182px;
-    margin-top: -30px;
+    position: absolute;
+    bottom: 0; /* Positioned at the bottom */
+    left: 0; /* Aligned with the left edge of the right-div */
+    margin-left: 40%;
+    margin-top: 100px;
 }
+
 
 #header-banner {
     font-size: 1.2em;
@@ -232,21 +247,25 @@ body {
 }
 
 .connecting-image {
+    margin-left: 10%;
     position: absolute;
     top: 35%;
     left: 30%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scaleX(-1);
     width: 350px;
     height: auto;
-    transform: scaleX(-1);
     z-index: 1;
+    margin-top: 100px;
     box-shadow: 5px 5px 10px rgba(50, 50, 51, 0.3);
 }
+
 
 #popular-clinics {
     text-align: center;
     font-size: 1em;
     margin-top: 0.7em;
+    padding-top: 1em;
+    margin-bottom: 50px;
 }
 
 #popular-clinics h1 {
@@ -558,3 +577,11 @@ footer {
     background-image: url('../PICTURES/clinics/clinic4.jpg');
     flex: 1;
 }
+
+.side-by-side {
+    display: flex;
+    width: 100%;
+}
+
+
+
