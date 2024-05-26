@@ -86,7 +86,10 @@ body {
     background-size: 25%;
     background-position: center;
     background-repeat: no-repeat;
+    width: 2.5em; /* Set width equal to height */
+    height: 2.5em; /* Set height equal to width */
 }
+
 
 #search-button:hover {
     background-color: #2980b9;

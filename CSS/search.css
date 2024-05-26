@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Poppins";
     font-size: 12px;
@@ -132,6 +136,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     box-shadow: #2b2a2a 0px 0px 3em;
     z-index: 1;
+    flex-grow: 1;
 }
 
 #sort-options {
@@ -172,10 +177,10 @@ body {
     border-radius: 0.5em;
 }
 
-#map {
+/* #map {
     flex-shrink: 1;
     flex-grow: 0;
-}
+} */
 
 .listing-item img {
     width: 100%;
