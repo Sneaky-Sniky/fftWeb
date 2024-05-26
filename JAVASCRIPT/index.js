@@ -28,3 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCarousel();
 });
 
+function navigateTo(page) {
+    window.location.href = page;
+}

@@ -17,9 +17,9 @@
             <div id="nav-bar-left-side">
             </div>
             <div id="nav-bar-right-side">
-                <button type="button" class="menu-buttons">My Files</button>
-                <button type="button" class="menu-buttons">News</button>
-                <button type="button" class="menu-buttons">Account</button>
+                <button type="button" class="menu-buttons" onclick="navigateTo('myfiles.html')">My Files</button>
+                <button type="button" class="menu-buttons" onclick="navigateTo('account.html')">Account</button>
+
 
             </div>
         </div>
@@ -32,15 +32,15 @@
             <div id="search-bar-holder">
                 <input autocomplete="off" type="text" placeholder="Ex:Doctor, Cabimnet, Medicine, Farmacies..." id="search-bar">
                 <input autocomplete="off" type="text" placeholder="Where" id="search-bar-location">
-                <input type="button" id="search-button">
+                <input type="button" onclick="navigateTo('search.html')" id="search-button">
             </div>
             
             <div>
-                <button class="filter-button" id="filter-button-left">Cardiology</button>
-                <button class="filter-button">Dermatology</button>
-                <button class="filter-button">Endocrinology</button>
-                <button class="filter-button">Gastro</button>
-                <button class="filter-button" id="filter-button-right">Neurology</button>
+                <button class="filter-button" onclick="navigateTo('search.html')" id="filter-button-left">Cardiology</button>
+                <button class="filter-button"onclick="navigateTo('search.html')">Dermatology</button>
+                <button class="filter-button"onclick="navigateTo('search.html')">Endocrinology</button>
+                <button class="filter-button"onclick="navigateTo('search.html')">Gastro</button>
+                <button class="filter-button" id="filter-button-right" onclick="navigateTo('search.html')">Neurology</button>
             </div>
             
         </div>
