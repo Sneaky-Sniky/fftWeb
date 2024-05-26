@@ -84,6 +84,9 @@ button:hover {
     margin-bottom: 6px;
 }
 
+#text-or-login{
+    margin-top: 20px;
+}
 .google-login {
     background-color: #db4437;
     color: white;

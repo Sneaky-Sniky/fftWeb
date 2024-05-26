@@ -195,6 +195,7 @@ HTML{
     align-items: center;
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
+    text-align: center;
 }
 
 .file-item img {

@@ -21,14 +21,30 @@
             <button type="submit" id="login-btn">Login</button>
         </form>
         <div class="social-login">
-            <p>Or login with</p>
-            <button class="google-login">Login with Google</button>
-            <button class="facebook-login">Login with Facebook</button>
+            <p id="text-or-login">Or login with</p>
+            <button type="button" id="google-login-btn" class="google-login">Login with Google</button>
+            <button type="button" id="facebook-login-btn" class="facebook-login">Login with Facebook</button>
         </div>
         <div class="register">
             <p>Don't have an account? <a href="#">Register</a></p>
         </div>
     </div>
+    
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = '../HTML/logged.html';
+        });
+    
+        document.getElementById('google-login-btn').addEventListener('click', function() {
+            window.location.href = '../HTML/logged.html'; // Replace with your Google login URL
+        });
+    
+        document.getElementById('facebook-login-btn').addEventListener('click', function() {
+            window.location.href = '../HTML/logged.html'; // Replace with your Facebook login URL
+        });
+    </script>
+    
     
     <script>
         document.getElementById('login-form').addEventListener('submit', function(event) {
