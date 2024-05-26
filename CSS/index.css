@@ -144,8 +144,12 @@ body {
     max-width: 1000px;
     margin:auto;
 }
-#volunteer-div {
+#popular-doctors{
+    padding-bottom: 10em;
+}
+#volunteer-div{
     background-color: #efefef;
+    padding-bottom: 5em;
 }
 
 #volunteer-links {
@@ -234,16 +238,16 @@ body {
 
 
 #header-banner {
-    font-size: 1.2em;
-    margin-left: 7em;
-    margin-top: 3em;
+    font-size: 1.7em;
+    margin-left: 200px;
+    margin-top: 800px;
     position: relative;
 }
 
 #quote {
     font-size: 1.4em;
-    margin-left: 10em;
-    margin-top: 5em;
+    margin-left: 300px;
+    margin-top: 200px;
 }
 
 .connecting-image {
