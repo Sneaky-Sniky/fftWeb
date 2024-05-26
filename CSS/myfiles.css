@@ -59,6 +59,12 @@ HTML{
 
 
 
+.nav-button:hover {
+    color: #3498db;
+}
+
+
+
 /* Account styling */
  .account {
     color: #fff; /* White color */
