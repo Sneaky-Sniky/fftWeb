@@ -323,34 +323,6 @@ button{
     justify-content: space-between;
 }
 
-#logo-container{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-size: medium;
-}
-#logo {
-    width: 3em;
-    height: 3em;
-    margin-right: 10px;
-}
 
-.nav-buttons {
-    display: flex;
-    gap: 15px;
-}
 
-.nav-button {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    background-color: transparent;
-    border: none;
-    transition: color 0.3s;
-    font-size: large;
-}
-
-.nav-button:hover {
-    color: #3498db;
-}
 
