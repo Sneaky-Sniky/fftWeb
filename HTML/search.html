@@ -8,15 +8,23 @@
     <link rel="stylesheet" href="../CSS/search.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="../JAVASCRIPT/search.js"></script>
+    <script src="../JAVASCRIPT/search.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
-        <img id="logo" src="../PICTURES/Icon.png" alt="logo">
-        <h1>Medical Site</h1>
+        <div id="logo-container">
+            <a href="index.html">
+                <img id="logo" src="../PICTURES/Icon.png" alt="logo">
+            </a>
+            <h1>Medical Site</h1>
+        </div>
         
+        <div class="nav-buttons">
+            <a href="account.html" class="nav-button">Account</a>
+            <a href="myfiles.html" class="nav-button">My Files</a>
+            
+        </div>
     </nav>
-    
 
     <div id="map-listing">
         <div id="sort-listing">
@@ -24,7 +32,7 @@
                 <div class="search-bars">
                     <button id="open-now-btn" onclick="toggleButton('open-now-btn')">Open now</button>
                     <button id="near-me-btn" onclick="toggleButton('near-me-btn')">Near me</button>
-                    <select id="price-select">
+                    <select id="price-select" onchange="sortListings()">
                         <option value="">Price</option>
                         <option value="low-high">Low to High</option>
                         <option value="high-low">High to Low</option>
@@ -35,83 +43,73 @@
                 </div>
             </div>
             <div class="listing">
-                
-            <div class="listing-items">
-                <div class="listing-item">
-                    <div id="image1" class="listing-item-image"></div>
-                    <div class="listing-content">
-                        <p>Listing 1</p>
-                        <div class="price-status">
-                        <p class="price">$100</p>
-                        <div class="status"></div>
-                    </div>
-                    </div>
-                </div>
-                <div class="listing-item">
-                    <div id="image2" class="listing-item-image"></div>
-                    <div class="listing-content">
-                        <p>Listing 2</p>
-                        <div class="price-status">
-                        <p class="price">$200</p>
-                        <div class="status"></div>
-                    </div>
-                    </div>
-                    
-                </div>
-                <div class="listing-item">
-                    <div id="image3" class="listing-item-image"></div>
-                    <div class="listing-content" >
-                        <p>Listing 3</p>
-                        <div class="price-status">
-                            <p class="price">$150</p>
-                            <div class="status"></div>
+                <div class="listing-items">
+                    <div class="listing-item">
+                        <div id="image1" class="listing-item-image"></div>
+                        <div class="listing-content">
+                            <p>Listing 1</p>
+                            <div class="price-status">
+                                <p class="price">$100</p>
+                                <div class="status">Open</div>
+                            </div>
                         </div>
                     </div>
-                    
-                </div>
-                <div class="listing-item">
-                    <div id="image4" class="listing-item-image"></div>
-                    <div class="listing-content"> 
-                        <p>Listing 4</p>
-                        <div class="price-status">
-                            <p class="price">$150</p>
-                            <div class="status"></div>
+                    <div class="listing-item">
+                        <div id="image2" class="listing-item-image"></div>
+                        <div class="listing-content">
+                            <p>Listing 2</p>
+                            <div class="price-status">
+                                <p class="price">$200</p>
+                                <div class="status">Closed</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="listing-item">
-                    <div id="image5" class="listing-item-image"></div>
-                    <div class="listing-content">
-                        <p>Listing 5</p>
-                        <div class="price-status">
-                            <p class="price">$150</p>
-                            <div class="status"></div>
+                    <div class="listing-item">
+                        <div id="image3" class="listing-item-image"></div>
+                        <div class="listing-content">
+                            <p>Listing 3</p>
+                            <div class="price-status">
+                                <p class="price">$150</p>
+                                <div class="status">Open</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="listing-item">
-                    <div id="image6" class="listing-item-image"></div>
-                    <div class="listing-content">
-                        
-                    <p>Listing 6</p>
-                    <div class="price-status">
-                        <p class="price">$150</p>
-                        <div class="status"></div>
+                    <div class="listing-item">
+                        <div id="image4" class="listing-item-image"></div>
+                        <div class="listing-content">
+                            <p>Listing 4</p>
+                            <div class="price-status">
+                                <p class="price">$150</p>
+                                <div class="status">Open</div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="listing-item">
+                        <div id="image5" class="listing-item-image"></div>
+                        <div class="listing-content">
+                            <p>Listing 5</p>
+                            <div class="price-status">
+                                <p class="price">$150</p>
+                                <div class="status">Closed</div>
+                            </div>
+                        </div>
                     </div>
-                    
+                    <div class="listing-item">
+                        <div id="image6" class="listing-item-image"></div>
+                        <div class="listing-content">
+                            <p>Listing 6</p>
+                            <div class="price-status">
+                                <p class="price">$300</p>
+                                <div class="status">Open</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
         <div id="map">
             <iframe width="641" height="862" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=641&amp;height=862&amp;hl=en&amp;q=%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='http://mapseinbinden.de'>auf www.Mapseinbinden.de</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=828e86eaa18eeb6c800d8350a6d30a1b06ce5ba5'></script>
         </div>
-            
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     </div>
-    
 </body>
 </html>

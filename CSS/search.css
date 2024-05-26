@@ -68,7 +68,10 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
-    margin: 10px;
+    margin: 1px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 1em;
 }
 
 .search-bars button, .search-bars select, .search-bars input[type="text"] {
@@ -101,15 +104,15 @@ body {
     min-width: 80px;
 }
 
-.search-bars button.toggle-off {
+.search-bars button {
     background-color: #6c757d;
 }
 
-.search-bars button.toggle-on:hover {
+.search-bars button.active:hover {
     background-color: #218838;
 }
 
-.search-bars button.toggle-off:hover {
+.search-bars button:hover {
     background-color: #5a6268;
 }
 
@@ -143,8 +146,9 @@ body {
 
 #sort-options {
     display: flex;
-    margin-bottom: 10px;
-    margin-top: 0.5em;
+    margin-bottom: 14px;
+    padding-bottom: 16px;
+    margin-top: 12px;
     margin-right: 1.5em;
     height: 3em;
     width: 100%;
@@ -279,4 +283,52 @@ body {
     font-size: 10px;
 }
 
+button.active{
+    background-color: #3498db;
+    color: white;
+}
+
+button{
+    background-color: gray;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    justify-content: space-between;
+}
+
+#logo-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: medium;
+}
+#logo {
+    width: 3em;
+    height: 3em;
+    margin-right: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+    transition: color 0.3s;
+    font-size: large;
+}
+
+.nav-button:hover {
+    color: #3498db;
+}
 

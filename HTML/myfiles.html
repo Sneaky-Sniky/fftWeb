@@ -4,32 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../CSS/myfiles.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="../PICTURES/icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="../JAVASCRIPT/myfiles.js"></script>
     <title>My Files</title>
 </head>
     <body>
-        <div id="nav-toppest">
-            <a href="#" class="logo">Logo</a>
+        <nav class="navbar">
+            <div id="logo-container">
+                <a href="index.html">
+                    <img id="logo" src="../PICTURES/Icon.png" alt="logo">
+                </a>
+                <h1>Medical Site</h1>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="account.html" class="nav-button">Account</a>
+                <a href="search.html" class="nav-button">Search</a>
                 
-                <!-- Notification -->
-            <div class="notification">3</div>
-                
-                <!-- Account -->
-            <a href="#" class="account">Account</a>
-        </div>
-        <div id="nav-bar">
-            <div class="navbar">
+            </div>
+        </nav>
 
-        </div>
-
-        <div id="second-nav">
-            <ul>
-                <li><a href="#">Medical Papers 1</a></li>
-                <li><a href="#">Medical Papers 2</a></li>
-                <li><a href="#">Medical Papers 3</a></li>
-                <li><a href="#">Medical Papers 4</a></li>
-                <li><a href="#">Medical Papers 5</a></li>
-            </ul>
+        <div class="sort-order-bar">
+            <div id="sort-container">
+                <label for="sort-select">Sort by:</label>
+                <select id="sort-select">
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                    <option value="date-asc">Date (Oldest first)</option>
+                    <option value="date-desc">Date (Newest first)</option>
+                </select>
+            </div>
+            
+            <div id="filter-container">
+                <label for="filter-select">Filter by:</label>
+                <select id="type-filter">
+                    <option value="">Filter by Type</option>
+                    <option value="gastrology">Gastrology</option>
+                    <option value="neurology">Neurology</option>
+            </select>
+            </div>
+            
         </div>
 
         <div class="file-list">
@@ -39,48 +56,67 @@
                     <p class="file-name">Medical Paper 1.pdf</p>
                     <p class="file-details">Doctor: Dr. Smith | Type: Gastrology | Date: May 24, 2024</p>
                 </div>
+                <div class="file-buttons">
+                    <button class="view-button">View</button>
+                    <button class="download-button">Download</button>
+                </div>
             </div>
-
             <div class="file-item">
                 <img src="../PICTURES/doc.png" alt="Document Icon">
                 <div class="file-info">
-                    <p class="file-name">Medical Paper 1.pdf</p>
-                    <p class="file-details">Doctor: Dr. Smith | Type: Gastrology | Date: May 24, 2024</p>
+                    <p class="file-name">Medical Paper 2.pdf</p>
+                    <p class="file-details">Doctor: Dr. Johnson | Type: Cardiology | Date: June 10, 2024</p>
+                </div>
+                <div class="file-buttons">
+                    <button class="view-button">View</button>
+                    <button class="download-button">Download</button>
                 </div>
             </div>
-
             <div class="file-item">
                 <img src="../PICTURES/doc.png" alt="Document Icon">
                 <div class="file-info">
-                    <p class="file-name">Medical Paper 1.pdf</p>
-                    <p class="file-details">Doctor: Dr. Smith | Type: Gastrology | Date: May 24, 2024</p>
+                    <p class="file-name">Medical Paper 3.pdf</p>
+                    <p class="file-details">Doctor: Dr. Williams | Type: Neurology | Date: July 5, 2024</p>
+                </div>
+                <div class="file-buttons">
+                    <button class="view-button">View</button>
+                    <button class="download-button">Download</button>
                 </div>
             </div>
-
             <div class="file-item">
                 <img src="../PICTURES/doc.png" alt="Document Icon">
                 <div class="file-info">
-                    <p class="file-name">Medical Paper 1.pdf</p>
-                    <p class="file-details">Doctor: Dr. Smith | Type: Gastrology | Date: May 24, 2024</p>
+                    <p class="file-name">Medical Paper 4.pdf</p>
+                    <p class="file-details">Doctor: Dr. Anderson | Type: Orthopedics | Date: August 20, 2024</p>
+                </div>
+                <div class="file-buttons">
+                    <button class="view-button">View</button>
+                    <button class="download-button">Download</button>
                 </div>
             </div>
-
             <div class="file-item">
                 <img src="../PICTURES/doc.png" alt="Document Icon">
                 <div class="file-info">
-                    <p class="file-name">Medical Paper 1.pdf</p>
-                    <p class="file-details">Doctor: Dr. Smith | Type: Gastrology | Date: May 24, 2024</p>
+                    <p class="file-name">Medical Paper 5.pdf</p>
+                    <p class="file-details">Doctor: Dr. Brown | Type: Pediatrics | Date: September 15, 2024</p>
+                </div>
+                <div class="file-buttons">
+                    <button class="view-button">View</button>
+                    <button class="download-button">Download</button>
                 </div>
             </div>
-
             <div class="file-item">
                 <img src="../PICTURES/doc.png" alt="Document Icon">
                 <div class="file-info">
-                    <p class="file-name">Medical Paper 1.pdf</p>
-                    <p class="file-details">Doctor: Dr. Smith | Type: Gastrology | Date: May 24, 2024</p>
+                    <p class="file-name">Medical Paper 6.pdf</p>
+                    <p class="file-details">Doctor: Dr. Martinez | Type: Dermatology | Date: October 8, 2024</p>
+                </div>
+                <div class="file-buttons">
+                    <button class="view-button">View</button>
+                    <button class="download-button">Download</button>
                 </div>
             </div>
-            <!-- Add more file items here -->
         </div>
+        
     </body>
 </html>

@@ -4,40 +4,63 @@
 }
 
 body{
-    background-color: #ECF5F9;
+    background-color: (245, 238, 238);
     font-family: "Poppins";
     font-size:16px;
     font-weight: 400;
     line-height: 24px;
     padding: 0%;
     margin: 0;
+    height: 100% !important;
+}
+HTML{
+    height: 100% !important;
 }
 
-#second-nav {
-    height: 100px;
-    background-color: #ffffff;
-    margin-bottom: 2em;
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    justify-content: space-between;
 }
-#nav-toppest {
+
+#logo-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: medium;
+}
+#logo {
+    width: 3em;
     height: 3em;
-    background-color: #ffffff;
+    margin-right: 10px;
 }
 
-/* Style for the second navigation bar container */
-#second-nav {
-    background-color: #ffffff; /* Blue background color */
-    padding: 10px 20px;
+.nav-buttons {
+    display: flex;
+    gap: 15px;
 }
 
-/* Style for the unordered list */
-#second-nav ul {
-    list-style-type: none; /* Remove default list bullets */
-    display: flex; /* Display list items horizontally */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    color: black;
-
+.nav-button {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+    transition: color 0.3s;
+    font-size: large;
 }
+.file-list{
+    background-color: rgb(245, 238, 238);
+    padding-top: 15px;
+    gap: 50px;
+}
+.nav-button:hover {
+    color: #3498db;
+}
+
 
 /* Style for each list item */
 #second-nav ul li {
@@ -58,23 +81,10 @@ body{
     
 }
 
-/* Hover effect for the links */
-#second-nav ul li a:hover {
-    color: #ffdd57; /* Yellow color on hover */
-}
 
-.navbar {
-    background-color: #3498db; /* Blue color */
-    padding: 10px 20px; /* Adjust padding as needed */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    
-}
 
 /* Logo styling */
-.navbar .logo {
+.logo {
     color: #fff; /* White color */
     font-size: 24px;
     font-weight: bold;
@@ -82,14 +92,14 @@ body{
 }
 
 /* Notification styling */
-.navbar .notification {
+.notification {
     color: #fff; /* White color */
     font-size: 20px;
     margin-right: 10px;
 }
 
 /* Account styling */
-.navbar .account {
+ .account {
     color: #fff; /* White color */
     font-size: 20px;
     text-decoration: none; /* Remove underline */
@@ -108,18 +118,24 @@ body{
     width: 250px;
     height: 300px;
     margin: 1em;
+    border-radius: 5px;
+    border: #c9c2c2 solid 1px;
+    
 }
 
 /* Style for document icon */
 .file-item img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     margin-bottom: 10px; /* Move image away from text */
+    margin-top: 25px;
+    
 }
 
 /* Style for file info container */
 .file-info {
     text-align: center;
+    padding: 15px;
 }
 
 
@@ -142,3 +158,94 @@ body{
     justify-content: center;
 
 }
+.sort-order-bar {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.sort-order-bar label {
+    margin-right: 10px;
+}
+
+.sort-order-bar select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+
+.filters {
+    margin-left: auto;
+}
+
+.filters select {
+    margin-left: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.file-list {
+    margin-top: 20px;
+    height: 100%;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.file-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.file-info {
+    flex-grow: 1;
+}
+
+.file-name {
+    font-weight: bold;
+}
+
+.file-details {
+    color: #666;
+}
+
+#filter-container{
+    margin-left: 10px;
+}
+
+.file-buttons {
+    display: flex;
+}
+
+.view-button, .download-button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    width:100px;
+}
+.view-button{
+    margin-left: 10px;
+    
+}
+
+.view-button:hover, .download-button:hover {
+    background-color: #3498db;
+}
+
+.file-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+}
+
+
